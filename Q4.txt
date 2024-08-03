@@ -1,0 +1,28 @@
+Structures:
+
+Location: Represents a location with an ID, name, address, and type (hospital or warehouse).
+RoadNode: Represents a node in the adjacency list of the graph, containing destination, traffic level, and a pointer to the next node.
+Connection: Represents a connection between two locations with a traffic level.
+Class DeliveryGraph:
+
+Constructor: Initializes the graph with locations and connections, creating an adjacency list for each location.
+PrintRoadList: Prints the connections (roads) for a given location.
+PrintDeliveryGraph: Prints all the roads for every location in the graph.
+FindDestinationId: Finds the ID of a location given its name.
+Destructor: Cleans up dynamically allocated memory.
+Dijkstra's Algorithm:
+
+MinRouteNode: Represents a node in the min-heap used by Dijkstra's algorithm, containing a vertex and its distance.
+MinRouteHeap: Manages the min-heap, including operations like extracting the minimum distance node and decreasing key values.
+DijkstraAlgorithm: Finds the shortest path from a source location to a destination location using Dijkstra's algorithm.
+GenerateDeliveryMap Function:
+
+Creates a graph with predefined connections and random traffic levels.
+main Function:
+
+Initializes the graph.
+Displays information about hospitals and warehouses.
+Prompts the user to enter required resources and the hospital name.
+Uses Dijkstra's algorithm to find the most efficient warehouse to deliver resources to the specified hospital.
+Outputs the most efficient warehouse.
+The code effectively models a delivery system where warehouses are connected to hospitals, and it uses Dijkstra’s algorithm to determine the most efficient warehouse for delivering resources to a hospital based on traffic conditions.
